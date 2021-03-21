@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class MoveSelect extends Component {
+class ReadSection extends Component {
 
 	state = {
 		bookshelf: '',
@@ -15,7 +15,6 @@ class MoveSelect extends Component {
 	onMoveBook(evt) {
 		if(evt.target.value){
 			this.setState({bookshelf: evt.target.value})
-			//this.props.onBookshelfChange(evt.target.value)
 			this.props.onMoveBook(evt.target.value)
 		}
 	}
@@ -38,9 +37,9 @@ class MoveSelect extends Component {
 }
 
 
-MoveSelect.propTypes = {
+ReadSection.propTypes = {
 	bookshelf: PropTypes.string.isRequired,
 	onMoveBook: PropTypes.func.isRequired
 }
 
-export default MoveSelect
+export default ReadSection

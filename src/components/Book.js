@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import * as BooksAPI from '../BooksAPI'
 import PropTypes from 'prop-types'
-import MoveSelect from './Moveselect'
+import MoveSelect from './Section'
 import Stars from './Stars'
 
 class Book extends Component {

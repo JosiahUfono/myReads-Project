@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-icons": "^2.2.7",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

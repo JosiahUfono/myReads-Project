@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Book from './Book';
 
-class Bookshelf extends Component {
+class BookShelf extends Component {
   state = {
     filteredBooks: []
   };
@@ -39,11 +39,11 @@ class Bookshelf extends Component {
   }
 }
 
-Bookshelf.propTypes = {
+BookShelf.propTypes = {
 	nextprops: PropTypes.object,
 	shelfType: PropTypes.string.isRequired,
 	shelfName: PropTypes.string.isRequired,
 	onBookshelfChange: PropTypes.func.isRequired
 }
 
-export default Bookshelf;
+export default BookShelf;

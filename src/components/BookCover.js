@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
-import Bookshelf from './Bookshelf';
+import BookShelf from './BookShelf';
 
 class BookCover extends Component {
 
@@ -16,9 +16,9 @@ class BookCover extends Component {
     return (
       <div className='list-books-content'>
         <div>
-          <Bookshelf books={this.state.books} shelfType='currentlyReading' shelfName='Currently Reading' onBookshelfChange={this.props.onBookshelfChange}/>
-					<Bookshelf books={this.state.books} shelfType='wantToRead' shelfName='Want to Read' onBookshelfChange={this.props.onBookshelfChange}/>
-					<Bookshelf books={this.state.books} shelfType='read' shelfName='Read' onBookshelfChange={this.props.onBookshelfChange}/>
+          <BookShelf books={this.state.books} shelfType='currentlyReading' shelfName='Currently Reading' onBookshelfChange={this.props.onBookshelfChange}/>
+					<BookShelf books={this.state.books} shelfType='wantToRead' shelfName='Want to Read' onBookshelfChange={this.props.onBookshelfChange}/>
+					<BookShelf books={this.state.books} shelfType='read' shelfName='Read' onBookshelfChange={this.props.onBookshelfChange}/>
         </div>
       </div>
     );
